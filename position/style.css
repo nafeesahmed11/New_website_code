@@ -1,0 +1,60 @@
+
+body{
+  
+}
+.parent{
+ height: 600px;
+ width: 1200px;
+ /* position: relative;
+ left: 5%; */
+ background-color: black;
+ margin-top: 50px;
+ position: relative;
+}
+
+.child{
+ height: 200px;
+ width: 400px;
+ background-color: green;
+ position: relative;
+ /* left: 10%;
+ bottom: 20%; */
+ border-right: 20px solid black;
+ border-bottom: 5px solid yellow;
+}
+
+.main{
+ height: 200px;
+ width: 400px;
+ background-color: yellow;
+ position: absolute;
+ top: 0px;
+ right: 0;
+}
+
+.main p{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+}
+
+
+/* fix start here  */
+
+.fix{
+ height: 200px;
+ width: 400px;
+ background-color: yellow;
+ position: fixed;
+ top: 50%;
+ right: 0px;
+}
+
+
+/* sticky start here  */
+.stick h1{
+ background: gray;
+ position: sticky;
+ top: 0px;
+}
+/* sticky start end  */
