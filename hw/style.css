@@ -1,3 +1,4 @@
+body{background-image: url(./image.png);}
 /* for sticky */
 p{
  position: sticky;
@@ -73,17 +74,17 @@ p{
     height: 60px;
     width: 80px;
     border:1px rgb(203, 145, 8) solid ;
-    position: absolute;
-    bottom: 1px;  
+    position: absolute;   
     border-radius: 20px;
+    bottom: 1px;
+
    } 
    .fixed{
-    border: 2px rgb(154, 72, 72) solid;
+    border: 2px rgb(112, 8, 8) solid;
     height: 100px;
     width: 100px;
     background-color: rgb(154, 72, 72);
     position: fixed;
-    top: px;
    right: 1px;
 
    }

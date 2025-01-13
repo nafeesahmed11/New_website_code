@@ -1,0 +1,282 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+.open-sans-normal {
+font-family: "Open Sans", serif;
+font-optical-sizing: auto;
+font-style: normal;
+font-variation-settings:
+ "wdth" 100;
+}
+.nav-title{
+ font-size: 36px;
+ font-weight: 800;
+ color: #0E0E0E;
+}
+/* banner styles */
+.banner{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ border-radius: 24px;
+ background-color: #C6E4D6;
+ padding: 100px;
+ opacity: 100%;
+ margin: 100px 80px 100px 80px;
+}
+.banner-content{
+ max-width:1280px ;
+ max-height: 560px; 
+}
+.banner-title{
+ font-weight: 500;
+ font-size: 24px;
+ color:rgba(14, 14, 14, 0.5);
+ opacity: 100%;
+ 
+}
+.banner-description{
+ font-weight: bold;
+ font-size: 56px;
+ width: 622px;
+}
+/* Button styles */
+.btn-primary{
+ background-color: #006A50;
+ font-weight: 700;
+ font-size: 18px;
+ color: #FFFFFF;
+ border-radius: 8px;
+ padding:17px 34px;
+
+}
+.btn1-data{
+ background-color: rgba(84, 144, 245, 1);
+ font-weight: 700;
+ font-size: 16px;
+ color: #FFFFFF;
+ border-radius:8px ;
+ padding: 11px 20px;
+}
+.btn2-data{
+ background-color: rgba(9, 161, 92, 1);
+ font-weight: 700;
+ font-size: 16px;
+ color: #FFFFFF;
+ border-radius:8px ;
+ padding: 11px 20px;
+}
+.btn3-data{
+ background-color: rgba(255, 194, 57, 1);
+ font-weight: 700;
+ font-size: 16px;
+ color: #FFFFFF;
+ border-radius:8px ;
+ padding: 11px 20px;
+}
+.btn-news{
+ background-color: rgba(0, 106, 80, 1);
+ font-size: 18px;
+ font-weight: 700;
+ color: rgba(255, 255, 255, 1);
+ border-radius: 8px;
+ padding: 13px 26px;
+}
+.btn-100{
+ background-color: #FFFFFF;
+ font-size: 40px;
+ font-weight:bold ;
+ color:rgba(14, 14, 14, 0.8);
+ border-radius: 16px;
+ padding: 40px 40px;
+ margin-top: 32px;
+
+}
+.btn-200{
+ background-color:rgba(198, 228, 214, 1);
+ font-size: 40px;
+ font-weight:bold ;
+ color:rgba(14, 14, 14, 0.8);
+ border-radius: 16px;
+ padding: 40px 40px;
+ margin-top: 32px;
+
+}
+.btn-500{
+ background-color: #FFFFFF;
+ font-size: 40px;
+ font-weight:bold ;
+ color:rgba(14, 14, 14, 0.8);
+ border-radius: 16px;
+ padding: 40px 40px;
+ margin-top: 32px;
+
+}
+.btn-1000{
+ background-color: #FFFFFF;
+ font-size: 40px;
+ font-weight:bold ;
+ color:rgba(14, 14, 14, 0.8);
+ border-radius: 16px;
+ padding: 40px 40px;
+ margin-top: 32px;
+
+}
+.btn-done{
+ background-color: rgba(0, 106, 80, 1);
+ font-size: 18px;
+ font-weight: 700;
+ color: #FFFFFF;
+ border-radius: 8px;
+ padding: 17px 34px;
+ margin-top: 32px;
+ margin-left: 850px;
+ 
+ 
+}
+.banner-profile-pic{
+ width: 474.03px;
+ height: 400px;
+}
+.section-title{
+ font-size: 40px;
+ font-weight: bold;
+ color: #0E0E0E;
+}
+.section-description{
+ font-size: 16px;
+ color: rgba(14, 14, 14, 0.7);
+ font-weight: 500;
+}
+/* text center*/
+.text-center{
+  text-align: center;
+}
+.text-center2{
+ text-align: center;
+}
+/* main styles */
+main{
+ width: 1280px;
+ margin-left: auto ;
+ margin-right: auto;
+ 
+}
+/* dt style */
+.dt{
+ 
+ display:flex;
+ gap: 24px;
+ width: 1280px;
+ height: 325px;
+ border: 0px 160px 0px 160px;
+ margin-top: 32px;
+ align-items: center;
+ padding: auto;
+ 
+ 
+
+}
+.data-description{
+ font-size: 16px;
+ font-weight: 400;
+ color: rgba(14, 14, 14, 0.7);
+}
+.data-1{
+ width: 410.67px;
+ background-color: rgba(84, 144, 245, 0.5);
+ padding: 32px;
+ border-radius: 16px;
+}
+.data-2{ 
+ width: 410.67px;
+ background-color:  rgba(9, 161, 92, 0.5);
+ padding: 32px;
+ border-radius: 16px;
+}
+.data-3{
+ width: 410.67px;
+ background-color: rgba(255, 194, 57, 0.5);
+ padding: 32px;
+ border-radius: 16px;
+}
+/* image style */
+.pic1{
+ border-radius: 24px;
+ width: 408px;
+ opacity: 100%;
+
+}
+
+/* News styles */
+
+.section1-title{
+ font-size: 40px;
+ font-weight: bold;
+ color: rgba(14, 14, 14, 1);
+}
+.section1-description{
+ font-size: 16px;
+ width: 1280px;
+ color: rgba(14, 14, 14, 0.7);
+}
+.bd{
+ display: flex;
+ padding: 48px 48px;
+}
+
+.Satellite-description{
+ font-size: 16px;
+ font-weight: 400;
+ color: rgba(14, 14, 14, 0.7);
+ width: 774px;
+}
+.news-items{
+ font-size: 16;
+ width: 122px;
+ color: rgba(14, 14, 14, 0.7);
+}
+.bd2{
+ display: flex;
+ padding: 48px 48px;
+}
+/* Donate-title */
+.Donate-title{
+ font-size: 40px;
+ font-weight: bold;
+ color: rgba(14, 14, 14, 1);
+
+}
+.Donate-description{
+ font-size: 16px;
+ font-weight: 400;
+ color: rgba(14, 14, 14, 0.7);
+}
+footer input[type="text"]{
+ height: 64px;
+ width: 1032px;
+ background-color: #FFFFFF;
+ padding: 20px 40px;
+ margin-top: 32px;
+ margin-left: 420px;
+ 
+
+
+ 
+}
+/* footer button{
+ gap: 32px; */
+
+
+.gap{
+ display: flex;
+ gap: 32px;
+ justify-content: center;
+}
+
+
