@@ -1,0 +1,38 @@
+.container{
+ display: flex;
+ flex-wrap: wrap;
+ background-color: azure;
+ justify-content: space-between;
+
+}
+.container_1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+}
+.container_2{
+    display: flex;
+    
+    flex-basis: 100%;
+
+}
+.item {flex-grow: 1;}
+ @media (min-width:720px)
+ { .container_1{
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis:60px;
+}
+.container_2{
+ flex-basis: 40%;
+
+}
+.a{flex-basis: 50%;
+background-color: antiquewhite;
+border: 2px blac solid;}
+.b{flex-basis: 50%;}
+.d{flex-basis: 50%;}
+
+} 
+ 

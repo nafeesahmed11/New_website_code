@@ -278,5 +278,15 @@ footer input[type="text"]{
  gap: 32px;
  justify-content: center;
 }
+.container{flex-wrap: wrap;
+flex-grow: 1;
+flex-shrink: 1;
+margin-left: 1440px;
+max-width:fit-content
+
+}
+@media screen {
+  
+}
 
 
