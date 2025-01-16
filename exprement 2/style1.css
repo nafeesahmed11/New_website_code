@@ -1,1 +1,22 @@
-/* body(j) */
+body{
+ background-image: url(./1.jpg);
+ height: 100%;
+}
+.top{
+ border:2px red dashed;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: nowrap;
+ justify-content: space-evenly;
+ position: relative;
+ height: 500px;
+}
+.container-1{display: block;
+border: 1px  black solid;
+width: 50%;
+
+}
+#img-2{
+top:0%;
+height: 100%;
+}
