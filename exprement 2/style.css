@@ -1,0 +1,72 @@
+body{
+    background-image: url(1.jpg);
+    background-size: 100%;
+    margin-left: 10px;
+}
+
+#welcom{
+    color:#485460;
+}
+
+.container-1{
+    /* display: flex; */
+    flex: wrap;
+    flex-direction: row;   
+    position: relative;
+    height: 308px; 
+    top: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* max-height: 293px;
+    min-height: 505px */
+
+}
+
+#p1{
+    font-size: 15px;
+}
+
+.iam{
+    color: #1a5b97; 
+    font-size: 30px;
+}
+#lorem{
+    font-size: 20px;
+    color: black ;
+    border-right: 1px black solid;
+    width:40%;
+}
+#button-1{
+    color: brown;
+    background-color: rgba(36, 219, 127, 0.233);
+    border-radius: 9px;
+    height: 20px;
+}
+#button-1:hover{
+    background-color: rgba(14, 240, 127, 0.233);
+    height: 30px;
+    width: 100px;
+} 
+#img-2{
+    height: 200px;
+    position: absolute;
+    flex: wrap;
+    flex-direction: row;
+    right:5px ;
+    top:0%
+}
+
+#para-2{
+    font-size: 20px;
+    color: black ;
+    border-right: 1px black solid;
+
+}
+
+.container-2{
+    flex: wrap;
+    flex-direction: row;   
+    position: relative;
+    width: 300px;
+    top: 0%;
+    left: 0px;}
