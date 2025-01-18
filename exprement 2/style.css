@@ -1,77 +1,155 @@
 body{
-    background-image: url(1.jpg);
-    background-size: 100%;
-    margin-left: 10px;
+    background-image: url(./1.jpg);
+    height: 1000px;
+    margin: 0%;
+   
+   }
+   .top{
+    /* border:2px red dashed; */
     display: flex;
-    background-repeat: no-repeat;
-    /* flex-basis: 100px; */
-}
-
-#welcom{
-    color:#485460;}
-
-.container-1{
-    /* display: flex; */
-    flex: wrap;
-    flex-direction: row;   
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: center;
     position: relative;
-    height: 308px; 
-    top: 0%;
-    /* flex-basis: 1000px; */
-    /* flex-grow: 1; */
-    /* flex-shrink: 1; */
-    /* max-height: 293px;
-    min-height: 505px */
+    height: 500px;
+    align-items: stretch;
+    padding: 2px;
+   }
+   .container_top-1{display: block;
+   /* border: 1px  black solid; */
+   width: 300px;
+   /* left: ; */
+   
+   }
+.container_top-2{display: flex;
+     flex-wrap: wrap;
+     width: 54%;
+     margin-top:100px ;
+     /* border: 1px solid red; */
+    }
 
+   #img-1{
+   top:0%;
+   height: 100%;
 }
-
-#p1{
-    font-size: 15px;
-}
-
-.iam{
+   
+   #welcome{
+    color:#485460;
+    font-size: 36px;}
+   #p1{
+     font-size: 25px;
+   }
+   .iam{
     color: #1a5b97; 
-    font-size: 30px;
-}
-#lorem{
-    font-size: 20px;
-    color: black ;
-    border-right: 1px black solid;
-    width:40%;
-}
-#button-1{
+    font-size: 56px;
+   } #lorem{
+    
+        font-size: 25px;
+        color: black;
+        width: 310px;
+   }
+   #button-1{
     color: brown;
-    background-color: rgba(36, 219, 127, 0.233);
-    border-radius: 9px;
+    background-color: rgba(277, 231, 8, 0.745);
+
+    border-radius:2px  9px;
     height: 20px;
-}
-#button-1:hover{
-    background-color: rgba(14, 240, 127, 0.233);
+   }
+   #button-1:hover{
+    background-color: rgba(227, 246, 15, 0.233);
     height: 30px;
     width: 100px;
+    color: white;
+   } 
+    
+.container_top-3{
+    /* border: 1px blue dotted; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 60%; */
+    justify-items: center;
+    /* bottom: 100px; */
+    opacity: .2;
+}
+
+.container_mid-3{
+    /* border: 1px blue dotted; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* height: 60%; */
+    justify-items: center;
+    /* bottom: 100px; */
+    opacity: .2;
+    position: relative;
+    left: -2px;
 } 
 
-#img-2{
-    height: 10px;
-    position: absolute;
-    flex: wrap;
-    /* flex-direction: row; */
-    right:5px ;
-    top:0%;
-    width: 10px;
-}
-#para-2{
-    font-size: 20px;
+
+
+   #para-2{ font-size: 25px;
     color: black ;
-    border-right: 1px black solid;
-
-}
-
+    /* border-left: 1px black solid; */
+   }
+    
 .container-2{
-    /* flex: wrap; */
-    /* flex-direction: row;    */
+         display: flex;
+         /* flex-direction: row; */
+         /* flex-wrap: nowrap; */
+         justify-content: space-between;
+         /* position: relative; */
+         height: 490px;
+         align-items: stretch;
+         margin-top: 30px;
+         margin-left: 3px;
+         }
+   #img-2{
+    top:0%;
+    height: 100%;
+    /* margin-top: 10px; */
     position: relative;
-    width: 300px;
-    /* top: 0%; */
-    /* left: 0px; */
-}
+    /* margin: 5px; */
+    }
+    
+.container-2_1{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px black solid; */
+        width: 400px;
+        /* margin-top: 100px; */
+
+    }
+    #button-mid{
+        color: brown;
+        background-color: yellow;
+        border-radius:2px  9px;
+        height: 25px;
+        width: 120px;
+       }
+       #button-mid:hover{
+        background-color: rgb(246 167 36);
+        height: 26px;
+        width: 125px;
+        color: rgb(255, 255, 255);
+       } 
+
+ /* 3rd part */
+ 
+.container-3{
+        display: flex;
+           justify-content: center;
+           position: relative;
+           margin-top: 10px;
+       }
+ #tex_box{
+        display: flex;
+        position: relative;
+        width: 500px;
+        height: 20px;
+        border-radius: 5px;
+        justify-items: center;
+        color: white;
+        background-color:rgb(81, 150, 81);
+    }
