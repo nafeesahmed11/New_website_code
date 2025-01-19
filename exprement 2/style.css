@@ -218,6 +218,7 @@ body{
        } 
        /* Last part */
        #last_backgrond{
+        border-radius: 5px;
         background-image: linear-gradient(30deg,black,red);
         /* background-image: url(9.jpg); */
         height: 100%;
@@ -225,8 +226,9 @@ body{
         
 
        }
-.last{border: #9d0757 2px solid;
-    /* padding:100px ; */
+.last{
+    /* border: #9d0757 2px solid; */
+    padding:100px ;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -238,7 +240,8 @@ body{
     }
 
 #pro{
-    background-color:aliceblue ;
+    /* background-color:aliceblue ; */
+    background-image: linear-gradient(25deg,#eb2f06,#eb3b5a,#fc5c65);
     height: 270px;
     width:340px;
     border-left:blue 5px solid;
@@ -255,7 +258,9 @@ body{
     
 #basic{
     /* width: 360px; */
-    background-color: antiquewhite;
+    /* background-color: #70a1ff;
+     */
+     background-image: linear-gradient(25deg,#ff6b81,#ffa502,#ff4757,#ff7f50);
     height:287px;
     width: 45%;  
     position: relative; 
