@@ -1,0 +1,147 @@
+body{margin: 0;
+ font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+/* top-menu */
+.top-img_and_contant{
+  background-image: url(./imges/top-b.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.top {
+ background-image: url(./1.png);
+ width: 100%;
+ display: flex;
+ align-items: center;
+ padding-bottom: 50px;
+}
+nav.top-nav {
+ width: 100%;
+ display: flex;
+ justify-content: end;
+ margin-right: 20px;
+}
+.logo {
+ width: 30%;
+ height: 100%;
+}
+img.log {
+ height: 25px;
+}
+.top-nav>menu {
+ display: flex;
+ list-style: none;
+ gap: 30px;
+}
+.top-nav>menu>li>a{
+ text-decoration: none;
+ color: white;
+}
+.top-nav>menu>i{
+  color: palegoldenrod;
+}
+
+/* top-contant */
+.top-content {
+  width: 259px;
+  /* background: red; */
+  height: 265px;
+  /* display: flex; */
+  position: relative;
+  left: 65%;
+  margin-top: 50px;
+}
+.title{
+  color: #ffc200; 
+  height: 40px;
+  font-size: 50px;
+}
+.top-content>p{
+  color: white;
+}
+button {
+  height: 29px;
+  width: 120px;
+  background-color: #ffc200;
+  border: none;
+  border-radius: 5px;
+}
+a{
+  text-decoration: none;
+  color:black
+}
+/* 2nd Area */
+.con-b_seller {
+  margin-top: 53px;
+  padding-bottom: 10px;
+}
+/* b_con-1 */
+.con-b1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* b_bon-2 */
+.con-b2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 9px;
+  
+}
+/* fd1 */
+.f1 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eae9e998;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 2px 10px rgba(128, 128, 128, 0.599);
+}
+.f1>div>img{
+  height:100px;
+}
+.title-2{font-family: "Grand Hotel", serif;}
+
+.f1>div:nth-child(2){
+ text-align: center;
+}
+.title-3{height: 20px;}
+/* Area 2 end */
+
+/* Area 3 start */
+/* part 1 */
+section.taste_Cont {
+  background-image: url(./imges/Vec-taste_back.png);
+  display: flex;
+  margin-top: 100px;
+  gap: 10px;
+  justify-content: space-around;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -62px;
+}
+.tas-img {
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.tas-img>img{
+  height: 200px;
+}
+/* part2 */
+.tas-para {
+  width: 300px;
+}
+.tas-para>p{
+  color: white;
+}
