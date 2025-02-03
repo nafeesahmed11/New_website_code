@@ -73,7 +73,7 @@ button {
 }
 a{
   text-decoration: none;
-  color:black
+  color:#262626;
 }
 /* 2nd Area */
 .con-b_seller {
@@ -126,7 +126,7 @@ section.taste_Cont {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -62px;
+  background-position-y: 0%;
 }
 .tas-img {
   height: 300px;
@@ -206,6 +206,7 @@ section.grill-con {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-y: 100%;
 }
 /* Area 6 start */
 .len-fields{
@@ -221,7 +222,7 @@ section.grill-con {
   text-align: center;
 }
 .len-fields>p{
-  color: rgba(17, 17, 17, 0.682);
+  color: #262626;
   font-size: 20px;
 }
 .Subscribes{
@@ -295,3 +296,6 @@ footer.foot {
 .fot-2 p{
   color: rgba(255, 255, 255, 0.86);
 }
+.fot-2 p>a{color: rgba(255, 255, 255, 0.771);}
+@import "tailwindcss";
+@plugin "daisyui";
