@@ -6,11 +6,21 @@
      /* min-width:33rem ; */
      
    }
+   /* ----defult value of text---- */
    
+   h1{
+    font-size: 30px;
+   }
+   p{
+    font-size: 18px;
+    
+   }
+   /* ----defult value of text---- */
    /* top-menu */
    .top-img_and_contant{
      background-image: url(./imges/top-b.png);
      height: 500px;
+     overflow: hidden;
      background-repeat: no-repeat;
      background-size: cover;
    }
@@ -60,13 +70,19 @@
    }
    .title{
      color: #ffc200; 
-     /* height: 40px; */
+     height: 40px;
      font-size: 50px;
    }
    .top-content>p{
      color: white;
    }
-   
+   button {
+     height: 29px;
+     width: 120px;
+     background-color: #ffc200;
+     border: none;
+     border-radius: 5px;
+   }
    a{
      text-decoration: none;
      color:#262626;
@@ -78,11 +94,10 @@
    }
    /* b_con-1 */
    .con-b1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 17px;
-}
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
    /* b_bon-2 */
    .con-b2 {
      display: flex;
@@ -99,7 +114,7 @@
      background-color: #eae9e998;
      padding: 10px;
      border-radius: 5px;
-     box-shadow: 3px 2px 10px rgba(128, 128, 128, 0.599);
+     box-shadow: 2px 3px 6px rgba(128, 128, 128, 0.564);
    }
    .f1>div>img{
      height:100px;
@@ -151,7 +166,7 @@
      padding-bottom: 70px;
      background-repeat: no-repeat;
      background-size: cover;
-     /* background-position: center; */
+     background-position: center;
    }
    .sub-statis{
      display: flex;
@@ -184,12 +199,10 @@
      flex-direction: column;
      align-items: center;
      margin-top: 16px;
-     justify-content: center;
    }
-   .title-4{ 
-    align-items: center; 
-     color: #ffc200;
-     min-height:1px;
+   .title-4{  
+       color: #ffc200;
+     height:1px;
      font-size: 20px;
      
    }
@@ -279,7 +292,6 @@
      display: flex;
      gap: 20px;
      color: rgba(255, 255, 255, 0.924);
-     padding-top: 10px;
    }
    .fot-1{
      width: 40%;
@@ -298,86 +310,80 @@
    }
    .fot-2 p>a{color: rgba(255, 255, 255, 0.771);}
    
-   a:hover{
-    text-decoration: none;
-    color: black;
+   .stati1 p{
+    text-align: center;
    }
-   button {
-    height: 29px;
-    width: 120px;
-    background-color: #ffc200 !important;
-    border: none;
-    border-radius: 5px;
-  }
    /* ___________________MOBILE_________________ */
    
-@media screen and (max-width:600px) {
- body{
-  width: 50em;
- }
- .f1{
-  width: 10em;
- }
-
- .len-fields {
-  padding: 0px 0px 50px;
-}
-  .Subscribes{
-    padding: 50px 0px 50px;
+   @media screen and (max-width:600px){
+    .top{
+      padding-bottom: 0;
+    }
+    .top-img_and_contant {
+      overflow: hidden;
+      background-size: cover;
+      background-position-y: bottom;
+      height: 100vh;
   }
-  
- }
-@media screen and (max-width:450px){
- body{
-  width: auto;
- }
-  p{
-  font-size: 10px !important;
-  
- }
- h1{
-  font-size: 25px !important;
-  
- }
- header.top {
-  padding-bottom: 10px;
+  .top-content {
+    min-width: 200px;
+    position: relative;
+    left: 0;
+    margin-top: 60px;
+    background-color: rgba(59, 57, 57, 0.573);
+    box-shadow: 0px 0px 28px .2px;
+    border-radius: 10px;
+    backdrop-filter: blur(500px);
 }
-.top-img_and_contant {
-  height: 20vh;
-  width: auto;
+  .top-content p{
+    color: rgb(255, 255, 255);
+    font-weight:400 ;
+  }
+  /*----------2nd area----------*/
+  .f1 {
+    width: 82vw;
+    align-items: center;
+    height: 40vh;
 }
-.logo {
-  width: 25%;
-  height: 100%;
+.con-b1 p{
+  text-align: center;
+
 }
-nav.top-nav {
-  display: none;
-}
-.top-content {
-  background-image: linear-gradient(90deg, rgba(128, 128, 128, 0.633)  , rgba(128, 128, 128, 0.329),transparent);
-  width: 32vi;
-  height: 120px;
-  position: relative;
-  left: 225px;
-  margin-top: 24px;
-  border-radius: 10px;
-}
-button{
-  height: 3vh ;
-  width: 20vw ;
-  display: flex;
-  justify-content: center;
+.con-b2 {
+  gap: 9px;
+  flex-direction: column;
   align-items: center;
 }
-button>a{
-  font-size: 10px;
+/* ___________3rd Area__________ */
+section.taste_Cont {
+  flex-direction: column;
+  /* padding-bottom: 100px; */
+  align-items: center;
+  background-position-y: 19px;
+  justify-content: center;
+  
 }
-.f1 {
-  width: 36vi;
-  height: 32vh;
+.tas-img {
+  height: 18vh;
+  /* width: 300px; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
 }
-.f1>div>p{
-  font-size: 10px;
+.tas-para{
+  width: 60vw;
 }
 
+.tas-para h1{
+  padding-bottom: 2px;
+  font-size: 45px;
 }
+/*___________4th Area____________*/
+.stati2{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+   }
