@@ -1,0 +1,31 @@
+.dropdown{
+ display: inline-block;
+ min-width: 40px;
+ min-height: 20px; 
+ background-color: rgb(24, 35, 244);
+
+}
+.dropdown:hover .contant a{
+ display: block;
+}
+.dropdown:hover button{
+ background-color: rebeccapurple;
+ width: ;
+}
+.dropdown a:hover {
+ background-color: rgb(166, 110, 222);
+}
+.dropdown .button {
+ cursor: pointer;
+ /* background-color: antiquewhite; */
+ 
+ 
+}
+.contant a{
+ display: block;
+ padding: 15px 15px;
+ background-color: whitesmoke;
+ text-decoration: none;
+ color: black;
+ display: none;
+}
