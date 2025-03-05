@@ -1,2 +1,6 @@
-// onclick=document.getElementById('p-btn').innerHTML=22;
-// window.alert('hello javascsript file')
+let x=21;
+let y=21;
+
+if(x==y){
+ console.log('true')
+}
