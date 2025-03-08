@@ -1,9 +1,9 @@
-const x={
- fristName:"rohim",
- lastname:"korim",
- fullName:function() {
-   this.fristName+""+this.lastname;
-   console.log(x.fristName)
+const x ={
+ fristName: "rohim",
+ lastname:  " korim",
+ fullName: function() {
+  return this.fristName +""+ this.lastname;
+
  }
-};
-// console.log(x.fullName);
+}
+console.log(x.fullName());
