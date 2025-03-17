@@ -3,3 +3,4 @@ var x=point.sort(function(a,b){
  return a-b;
 });
 console.log(x);
+4
