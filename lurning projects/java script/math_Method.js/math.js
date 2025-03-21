@@ -6,3 +6,6 @@ console.log(b);
 
 let c=Math.trunc(4.6);
 console.log(c);
+
+let d=Math.ceil(4.6);
+console.log(d);
