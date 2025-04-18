@@ -1,7 +1,7 @@
 function showSidebar() {
- document.getElementById("navlist").style.right = "0";
+ document.getElementById("navlist").style.display = "none";
 }
 
 function hideSidebar() {
- document.getElementById("navlist").style.right = "-100%";
+ document.getElementById("navlist").style.display = "block";
 }

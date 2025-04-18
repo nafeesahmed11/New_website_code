@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Menu bar styling */
+        .menu-bar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .menu-button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .menu-button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        
+        /* Dobble game overlay */
+        .dobble-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .dobble-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 80%;
+        }
+        
+        .dobble-card {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            display: inline-block;
+            position: relative;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .dobble-symbol {
+            position: absolute;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <button class="menu-button">Home</button>
+            <button class="menu-button">About</button>
+        </div>
+        <div class="menu-right">
+            <button class="menu-button" id="dobble-button">Play Dobble!</button>
+        </div>
+    </div>
+    
+    <div class="dobble-overlay" id="dobble-overlay">
+        <div class="dobble-container">
+            <h2>Dobble Game</h2>
+            <p>Find the matching symbol between these two cards!</p>
+            <div id="dobble-cards-container">
+                <!-- Cards will be generated here -->
+            </div>
+            <button id="close-dobble" class="menu-button" style="margin-top: 20px;">Close</button>
+        </div>
+    </div>
+    
+    <script>
+        // Dobble game symbols (you can use emoji or images)
+        const symbols = ['★', '❤', '▲', '●', '◆', '☀', '☁', '☂', '☃', '♫', '⚓', '⚡'];
+        
+        // Generate a dobble card with symbols
+        function generateDobbleCard(symbolsOnCard) {
+            const card = document.createElement('div');
+            card.className = 'dobble-card';
+            
+            symbolsOnCard.forEach(symbol => {
+                const symbolElement = document.createElement('div');
+                symbolElement.className = 'dobble-symbol';
+                symbolElement.textContent = symbol;
+                
+                // Random position on card
+                symbolElement.style.left = Math.random() * 80 + 10 + '%';
+                symbolElement.style.top = Math.random() * 80 + 10 + '%';
+                
+                // Random rotation
+                symbolElement.style.transform = `rotate(${Math.random() * 360}deg)`;
+                
+                card.appendChild(symbolElement);
+            });
+            
+            return card;
+        }
+        
+        // Generate two dobble cards with exactly one matching symbol
+        function generateDobblePair() {
+            const container = document.getElementById('dobble-cards-container');
+            container.innerHTML = '';
+            
+            // Select a random symbol to be the common one
+            const commonSymbol = symbols[Math.floor(Math.random() * symbols.length)];
+            
+            // Create two arrays of symbols with one common symbol
+            const card1Symbols = [commonSymbol];
+            const card2Symbols = [commonSymbol];
+            
+            // Add other unique symbols to each card
+            const availableSymbols = symbols.filter(s => s !== commonSymbol);
+            
+            // Shuffle and pick symbols for each card
+            const shuffled = [...availableSymbols].sort(() => 0.5 - Math.random());
+            const symbolsPerCard = 6; // Adjust based on your game needs
+            
+            for (let i = 0; i < symbolsPerCard; i++) {
+                card1Symbols.push(shuffled[i]);
+                card2Symbols.push(shuffled[i + symbolsPerCard]);
+            }
+            
+            // Create and display the cards
+            const card1 = generateDobbleCard(card1Symbols);
+            const card2 = generateDobbleCard(card2Symbols);
+            
+            container.appendChild(card1);
+            container.appendChild(card2);
+            
+            // Add click handler to check for correct symbol
+            [card1, card2].forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (e.target.classList.contains('dobble-symbol')) {
+                        if (e.target.textContent === commonSymbol) {
+                            alert('Correct! You found the matching symbol: ' + commonSymbol);
+                            generateDobblePair(); // Generate new pair
+                        } else {
+                            alert('Not the matching symbol. Try again!');
+                        }
+                    }
+                });
+            });
+        }
+        
+        // Set up button event listeners
+        document.getElementById('dobble-button').addEventListener('click', () => {
+            document.getElementById('dobble-overlay').style.display = 'flex';
+            generateDobblePair();
+        });
+        
+        document.getElementById('close-dobble').addEventListener('click', () => {
+            document.getElementById('dobble-overlay').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
